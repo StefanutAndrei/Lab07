@@ -1,0 +1,54 @@
+body {
+  background-color: #4863A0;
+}
+h1 {
+  color: #FFDB58;
+  margin-left: 40px;
+}
+h2 {
+  color: maroon;
+  margin-left: 40px;
+}
+h3 {
+  color: maroon;
+  margin-left: 40px;
+}
+h4 {
+  color: maroon;
+  margin-left: 40px;
+}
+p {
+color: #4EE2EC;
+background-color:#736AFF;
+}
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+.impact {
+    font-family: Impact, Charcoal, sans-serif;
+  }
+ img {
+border: 5px solid#555;
+border-radius: 11px;
+opacity:0.8;
+ }
+ table{
+	  color:#4EE2EC;
+ }
+ ul {
+	 color:#4EE2EC;
+ }
+.text {
+  color: #b5e7a0;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 30%;
+  text-align: center;
+  }
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
