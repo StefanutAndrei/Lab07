@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: MediumSeaGreen;
+}
+
+h3 {
+  color: maroon;
+  margin-left: 40px;
+}
+img {
+border-radius:30px;
+opacity:0.8;
+}
+p {
+color: red;
+background-color: yellow;
+}
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+.impact {
+    font-family: Impact, Charcoal, sans-serif;
+  }
+.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<script>
+function myFunction() 
+{
+ document.getElementById("numeprofil").innerHTML = "Dr. doc. inginer Ștefănuț Andrei Eugen George";
+ document.getElementById("lista").innerHTML= "Lista realizari:";
+ document.getElementById("p1").innerHTML= "Intership";
+ document.getElementById("p2").innerHTML= "Munca in echipa";
+ document.getElementById("p3").innerHTML= "TED talk";
+ document.getElementById("p4").innerHTML= "Pescuit";
+ document.getElementById("p5").innerHTML= "Voluntear Work";
+ document.getElementById("p6").innerHTML= "Hiking";
+ document.body.style.background = "#f09960";
+ document.getElementById("id").style.backgroundColor = "aqua";
+ document.getElementById("numeprofil").style.backgroundColor= "aqua";
+ document.getElementById("nume").style.fontFamily= "Tahoma, Geneva, sans-serif";
+ var image = document.getElementById('img');
+ image.src = "pic2.jpg"; 
+ image.style.opacity = "0.9";
+ document.getElementById('img').style.borderRadius = "10px" ;
+}
+function varsta()
+{
+  var azi=new Date;
+  var VarstaMea;
+
+  var nasc=document.getElementById('varsta').innerHTML;
+  var curent=azi.getFullYear();
+
+  VarstaMea=curent-parseInt(nasc);
+  document.getElementById("varsta").innerHTML=VarstaMea;
+}
+</script>
+</head>
+<body>
+<h3 id="nume" class="impact">Nume/Prenume:</h3>
+<p id="numeprofil" class="monospace" >Ștefănuț Andrei Eugen George</p>
+
+<img src="pic.jpg" id="img" style="width:150px;height:200px;">
+
+<h3>Email:</h3>
+<p class="sansserif" id="id" >stefanutandrei92@gmail.com</p>
+<p onmouseover="varsta()" id="varsta">1999</p>
+<button type="button" style="background-color:lightgreen;width:230;height:70; font: bold 20px ;" onclick="myFunction()">Alta viata</button>
+ 
+<h3 id="id">Citat:</h3>
+<p class="sansserif">“Natura ne aseamana, educatia ne deosebeste.”</p>
+
+<h3 id="lista">Lista discipline:</h3>
+<p id="p1">Programarea calculatoarelor-limbaje
+<a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf" >Link </a>
+</p>
+<p id="p2">Componente și circuite electronice passive
+<a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf">Link </a>
+</p>
+<p id="p3">Informatica aplicata
+<a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf">Link </a>
+</p>
+<h3>Hobbys:</h3>
+<p id="p4">art</p>
+<p id="p5">reading</p>
+<p id="p6">traveling</p>
+
+
+</body>
+</html>
